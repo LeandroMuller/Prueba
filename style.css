@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    background-color: #FFEBC1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.nav img{
+    width: 120px;
+    height: 120px;
+    grid-column: 2 / 3;
+}
+
+.menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #C74B50;
+}
+
+
+
+/*-----MAIN-----*/
+
+
+
+.Destacado {
+    margin: 0px 800px 0px 800px;
+}
+
+.slider{
+    width: 40%;
+    /*para centrar el carrusel*/
+    margin: auto;
+    /*oculta el resto de las imagenes*/
+    overflow: hidden;
+}
+
+.carrusel li{
+    list-style: none;
+    width: 100%;
+}
+
+.img-carrusel{
+    /*seria el 100% del <li>*/
+    width: 100%;
+}
+
+.carrusel {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: carrusel 25s linear infinite alternate;
+}
+
+@keyframes carrusel{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
+
+
+
+/*----footer----*/
+
+
+
+.footer-i{
+    display: grid;
+    height: 80px;
+    background-color: #FFEBC1;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-i li{
+    list-style: none;
+}
+
